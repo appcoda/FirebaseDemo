@@ -324,7 +324,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="x6X-Jq-YoQ" secondAttribute="trailing" constant="83" id="vlo-aB-VFG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Joke" id="JZp-fy-jGY"/>
+                    <navigationItem key="navigationItem" title="Add Joke" id="JZp-fy-jGY">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="84w-Rs-lIK">
+                            <connections>
+                                <action selector="logout:" destination="ZUw-69-RsN" id="WjY-jh-9up"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="jokeField" destination="Lsg-yZ-RiH" id="JW3-pq-xbb"/>
                     </connections>
