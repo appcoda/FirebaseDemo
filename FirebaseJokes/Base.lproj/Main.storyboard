@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BWq-D7-you">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0Km-CT-AMV">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -86,7 +86,7 @@
                     <connections>
                         <outlet property="emailField" destination="3kp-WA-eZ6" id="gIX-Dz-CPs"/>
                         <outlet property="passwordField" destination="chS-A8-c4g" id="qK2-Vq-PDs"/>
-                        <segue destination="0Km-CT-AMV" kind="show" identifier="CurrentlyLoggedIn" id="jc8-dV-5G5"/>
+                        <segue destination="0Km-CT-AMV" kind="presentation" identifier="CurrentlyLoggedIn" id="jc8-dV-5G5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7tQ-eS-QTv" sceneMemberID="firstResponder"/>
@@ -276,12 +276,12 @@
                         <outlet property="emailField" destination="WAS-yt-eCo" id="nH6-3x-87A"/>
                         <outlet property="passwordField" destination="ld5-N5-c04" id="djd-qH-fv2"/>
                         <outlet property="usernameField" destination="E4t-M9-5xE" id="P3X-tm-tyR"/>
-                        <segue destination="0Km-CT-AMV" kind="show" identifier="NewUserLoggedIn" id="VBz-OJ-326"/>
+                        <segue destination="0Km-CT-AMV" kind="presentation" identifier="NewUserLoggedIn" id="VBz-OJ-326"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWw-e9-f2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="574" y="1227"/>
+            <point key="canvasLocation" x="560" y="1211"/>
         </scene>
         <!--Add Joke-->
         <scene sceneID="EVB-vJ-RJz">
@@ -362,6 +362,6 @@
         <image name="thumb-up" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VBz-OJ-326"/>
+        <segue reference="jc8-dV-5G5"/>
     </inferredMetricsTieBreakers>
 </document>
