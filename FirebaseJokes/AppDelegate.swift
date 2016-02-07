@@ -12,10 +12,20 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var userDefaults = NSUserDefaults.standardUserDefaults()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Set different rootViewController depending on the login status
+        if userDefaults.valueForKey("uid") != nil && DataService.dataService.CURRENT_USER_REF.authData != nil{
+            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateInitialViewController()
+        } else {
+            let rootController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("Login")
+            let navigation = UINavigationController(rootViewController: rootController)
+            self.window?.rootViewController = navigation
+        }
+        
         return true
     }
 
